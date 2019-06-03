@@ -47,6 +47,8 @@ class Graf {
 public class Main {
 
     public static void DFS(Graf g) {
+        System.out.print("DFS: ");
+
         for (Node u : g.nodes) {
             u.visited = false;
             u.p = null;
@@ -75,7 +77,7 @@ public class Main {
 
 
     public static void BFS(Graf g) {
-        System.out.print("-->");
+        System.out.print("BFS: ");
 
         for (Node s : g.nodes) {
             s.visited = false;
@@ -144,7 +146,7 @@ public class Main {
         System.out.println(graf.joints);
 
         DFS(graf);
-        System.out.println('\n');
+        System.out.println();
         BFS(graf);
     }
 }
