@@ -55,7 +55,7 @@ public class Main {
                 return "TREE";
             if(j.last.visited && !j.last.processed)
                 return "BACK";
-            if(j.last.processed && j.last.time>j.first.time)
+            if(j.last.processed && j.last.time>=j.first.time)
                 return "FORWARD";
             if(j.last.processed && j.last.time<j.first.time)
                 return "CROSS";
